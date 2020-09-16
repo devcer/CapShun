@@ -8,6 +8,8 @@ import { View, Text } from './Themed';
 
 
 export default function QuoteCard(props: {quote: Quote}) {
+    
+
     return(
         <View style={styles.container}>
             <Text style={styles.moodText}>Mood: {props.quote.mood}</Text>
@@ -15,17 +17,17 @@ export default function QuoteCard(props: {quote: Quote}) {
             <Text style={styles.quoteText}>{props.quote.quote}</Text>
             {/* <Button
                 title="Copy Quote"
-                onPress={() => Alert.alert('Simple Button pressed')}
+                onPress={() => copyQuote()}
             /> */}
-            <FontAwesome.Button name="copy" backgroundColor="#000" onPress={copyQuote()}>
+            <FontAwesome.Button name="copy" backgroundColor="#000" onPress={() => copyQuote()}>
                 Copy
             </FontAwesome.Button>
         </View>
     );
-
     function copyQuote() {
-        // alert("copyQuote")
+        alert("copyQuote");
     }
+    
 }
 
 const styles = StyleSheet.create({
