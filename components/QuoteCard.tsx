@@ -7,16 +7,16 @@ import Colors from '../constants/Colors';
 import { View, Text } from './Themed';
 
 
-export default function QuoteCard() {
+export default function QuoteCard(props: {quote: Quote}) {
     return(
         <View style={styles.container}>
-            <Text style={styles.moodText}>Mood: Happy</Text>
-            <Text style={styles.tagsText}>Tags: Beach, Water, Swimming, Sunset</Text>
-            <Text style={styles.quoteText}>Beaches be like!</Text>
-            <Button
+            <Text style={styles.moodText}>Mood: {props.quote.mood}</Text>
+            <Text style={styles.tagsText}>Tags: {props.quote.tags.join(", ")}</Text>
+            <Text style={styles.quoteText}>{props.quote.quote}</Text>
+            {/* <Button
                 title="Copy Quote"
                 onPress={() => Alert.alert('Simple Button pressed')}
-            />
+            /> */}
             <FontAwesome.Button name="copy" backgroundColor="#000" onPress={copyQuote()}>
                 Copy
             </FontAwesome.Button>
@@ -24,17 +24,18 @@ export default function QuoteCard() {
     );
 
     function copyQuote() {
-
+        // alert("copyQuote")
     }
 }
 
 const styles = StyleSheet.create({
     container: {
         borderColor: "#cccccc",
-        borderWidth: 2
+        borderWidth: 2,
+        flex: 1
     },
     moodText: {
-        fontSize: 18,
+        fontSize: 16,
         padding: 5,
     },
     tagsText: {
@@ -42,10 +43,16 @@ const styles = StyleSheet.create({
         padding: 5,
     },
     quoteText: {
-        fontSize: 16,
+        fontSize: 20,
         padding: 5,
     },
     copyButton: {
 
     }
 });
+
+export interface Quote {
+    mood: string,
+    tags: string[],
+    quote: string
+}
