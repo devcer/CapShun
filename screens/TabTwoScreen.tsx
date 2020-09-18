@@ -9,10 +9,11 @@ export default function TabTwoScreen() {
   const quotes: Quote[] = [
     { mood: "Happy", tags: ["sunset", "beach"], quote: "Beach please!" },
     { mood: "Sad", tags: ["sunset", "mountains"], quote: "Not the end!" },
+    { mood: "Neutral", tags: ["calm", "mountains"], quote: "Live the moment" },
   ];
 
   const quoteItems = quotes.map((quote) => (
-    <QuoteCard quote={quote}></QuoteCard>
+    <QuoteCard key={quote.mood} quote={quote}></QuoteCard>
   ));
 
   return (

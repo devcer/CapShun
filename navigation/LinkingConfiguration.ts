@@ -11,7 +11,7 @@ export default {
               TabOneScreen: 'one',
             },
           },
-          TabTwo: {
+          Quotes: {
             screens: {
               TabTwoScreen: 'two',
             },
