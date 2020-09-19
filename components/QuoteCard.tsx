@@ -7,8 +7,6 @@ import Colors from '../constants/Colors';
 import { View, Text } from './Themed';
 
 export default function QuoteCard(props: {quote: Quote}) {
-    const [copiedQuote, setCopiedQuote] = useState('');
-    const [visibleToast, setvisibleToast] = useState(false);
 
     return(
         <View style={styles.container}>
