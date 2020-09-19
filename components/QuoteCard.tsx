@@ -7,7 +7,6 @@ import Colors from '../constants/Colors';
 import { View, Text } from './Themed';
 
 export default function QuoteCard(props: {quote: Quote}) {
-    
     const [copiedQuote, setCopiedQuote] = useState('');
 
     return(
@@ -58,6 +57,7 @@ const styles = StyleSheet.create({
 });
 
 export interface Quote {
+    id: string | number,
     mood: string,
     tags: string[],
     quote: string
