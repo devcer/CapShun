@@ -1,6 +1,6 @@
 import * as WebBrowser from 'expo-web-browser';
 import React, { useState } from 'react';
-import { StyleSheet, TouchableOpacity, Button, Alert, Clipboard} from 'react-native';
+import { StyleSheet, TouchableOpacity, Button, Alert, Clipboard, ToastAndroid} from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
 import Colors from '../constants/Colors';
@@ -8,6 +8,7 @@ import { View, Text } from './Themed';
 
 export default function QuoteCard(props: {quote: Quote}) {
     const [copiedQuote, setCopiedQuote] = useState('');
+    const [visibleToast, setvisibleToast] = useState(false);
 
     return(
         <View style={styles.container}>
@@ -23,8 +24,9 @@ export default function QuoteCard(props: {quote: Quote}) {
             </FontAwesome.Button>
         </View>
     );
-    function copyToClipboard(ev) {
+    function copyToClipboard() {
         Clipboard.setString(props.quote.quote);
+        showToast("Copied to clipboard");
     }
 
     const fetchCopiedText = async () => {
@@ -55,6 +57,10 @@ const styles = StyleSheet.create({
 
     }
 });
+
+export const showToast = (message: string) => {
+    ToastAndroid.showWithGravity("Caption copied", ToastAndroid.LONG, ToastAndroid.BOTTOM);
+};
 
 export interface Quote {
     id: string | number,
