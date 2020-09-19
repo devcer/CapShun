@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
 });
 
 export const showToast = (message: string) => {
-    ToastAndroid.showWithGravity("Caption copied", ToastAndroid.LONG, ToastAndroid.BOTTOM);
+    ToastAndroid.showWithGravity("Caption copied", ToastAndroid.SHORT, ToastAndroid.BOTTOM);
 };
 
 export interface Quote {
