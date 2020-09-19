@@ -28,11 +28,6 @@ export default function QuoteCard(props: {quote: Quote}) {
         Clipboard.setString(props.quote.quote);
         showToast("Copied to clipboard");
     }
-
-    const fetchCopiedText = async () => {
-        const text = await Clipboard.getString()
-        setCopiedQuote(text)
-    }
 }
 
 const styles = StyleSheet.create({
@@ -59,7 +54,7 @@ const styles = StyleSheet.create({
 });
 
 export const showToast = (message: string) => {
-    ToastAndroid.showWithGravity("Caption copied", ToastAndroid.SHORT, ToastAndroid.BOTTOM);
+    ToastAndroid.showWithGravity(message, ToastAndroid.SHORT, ToastAndroid.BOTTOM);
 };
 
 export interface Quote {
