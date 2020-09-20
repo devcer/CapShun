@@ -13,10 +13,6 @@ export default function QuoteCard(props: {quote: Quote}) {
             <Text style={styles.moodText}>Mood: {props.quote.mood}</Text>
             <Text style={styles.tagsText}>Tags: {props.quote.tags.join(", ")}</Text>
             <Text style={styles.quoteText}>{props.quote.quote}</Text>
-            {/* <Button
-                title="Copy Quote"
-                onPress={() => copyQuote()}
-            /> */}
             <FontAwesome.Button name="copy" backgroundColor="#000" onPress={copyToClipboard}>
                 Copy
             </FontAwesome.Button>
@@ -56,7 +52,7 @@ export const showToast = (message: string) => {
 };
 
 export interface Quote {
-    id: string | number,
+    id: string,
     mood: string,
     tags: string[],
     quote: string
