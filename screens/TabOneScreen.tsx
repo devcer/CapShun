@@ -31,24 +31,18 @@ export default function TabOneScreen() {
     id: 'suudydjsjd',
     name: 'Abuja',
   }];
-  let multiSelect;
   const [items, setItems] = useState([]);
 
   const onSelectedItemsChange = (selectedItems) => {
     setItems( selectedItems );
-    console.log(selectedItems);
   };
  
   return (
     <SafeAreaView style={styles.container}>
-      {/* <Text style={styles.title}>Tab One</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/TabOneScreen.tsx" /> */}
         <MultiSelect
           hideTags
           items={listItems}
           uniqueKey="id"
-          ref={(component) => { multiSelect = component }}
           onSelectedItemsChange={onSelectedItemsChange}
           selectedItems={items}
           selectText="Pick Items"
@@ -62,12 +56,9 @@ export default function TabOneScreen() {
           itemTextColor="#000"
           displayKey="name"
           searchInputStyle={{ color: '#CCC' }}
-          submitButtonColor="#CCC"
+          submitButtonColor="#20C339"
           submitButtonText="Submit"
         />
-        <View>
-          {multiSelect && multiSelect.getSelectedItemsExt(items)}
-        </View>
     </SafeAreaView>
   );
 }
