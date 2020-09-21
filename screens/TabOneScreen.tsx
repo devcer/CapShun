@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { SafeAreaView, StyleSheet, View } from 'react-native';
 import MultiSelect from 'react-native-multiple-select';
+import Picker from '@react-native-community/picker/js/Picker'
 
 export default function TabOneScreen() { 
   const listItems = [{
@@ -32,6 +33,7 @@ export default function TabOneScreen() {
     name: 'Abuja',
   }];
   const [items, setItems] = useState([]);
+  const [mood, setMood] = useState('');
 
   const onSelectedItemsChange = (selectedItems) => {
     setItems( selectedItems );
@@ -39,6 +41,15 @@ export default function TabOneScreen() {
  
   return (
     <SafeAreaView style={styles.container}>
+      <Picker
+        selectedValue={mood}
+        style={{height: 50, width: 100}}
+        onValueChange={(itemValue, itemIndex) =>
+          setMood(itemValue)
+        }>
+        <Picker.Item label="Java" value="java" />
+        <Picker.Item label="JavaScript" value="js" />
+      </Picker>
         <MultiSelect
           hideTags
           items={listItems}
