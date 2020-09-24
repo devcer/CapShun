@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
-import { Button, SafeAreaView, StyleSheet, View } from 'react-native';
+import { Button, FlatList, SafeAreaView, StyleSheet, View } from 'react-native';
 import MultiSelect from 'react-native-multiple-select';
 import Picker from '@react-native-community/picker/js/Picker'
 import { Moods } from '../constants/Text';
+import QuoteCard, { Quote } from '../components/QuoteCard';
+import { captions } from '../constants/MockData';
 
 export default function TabOneScreen({navigation}) {
   const listItems = [{
@@ -35,6 +37,7 @@ export default function TabOneScreen({navigation}) {
   }];
   const [items, setItems] = useState([]);
   const [mood, setMood] = useState('');
+  const [hideCaptions, setHideCaptions] = useState(true);
 
   const moodItems = Moods.map((mood) => (
     <Picker.Item key={mood.label} label={mood.label} value={mood.label} />
@@ -43,7 +46,9 @@ export default function TabOneScreen({navigation}) {
   const onSelectedItemsChange = (selectedItems) => {
     setItems( selectedItems );
   };
- 
+
+  const quotes = captions;
+  
   return (
     <SafeAreaView style={styles.container}>
       <Picker
@@ -78,11 +83,23 @@ export default function TabOneScreen({navigation}) {
         title="Show Captions"
         onPress={showCaptions}
       />
+      {
+        !hideCaptions &&
+        <FlatList
+          style={styles.captionsList}
+          data={quotes}
+          renderItem={({item})=> (
+            <QuoteCard key={item.id} quote={item}/>
+          )}
+        />
+      }
+
     </SafeAreaView>
   );
 
   function showCaptions() {
-    navigation.jumpTo('Quotes');
+    // navigation.jumpTo('Quotes');
+    setHideCaptions(false);
   }
 }
 
@@ -99,4 +116,7 @@ const styles = StyleSheet.create({
     height: 1,
     width: '80%',
   },
+  captionsList: {
+    paddingTop: 10
+  }
 });
