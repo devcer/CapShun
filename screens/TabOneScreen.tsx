@@ -53,7 +53,7 @@ export default function TabOneScreen({navigation}) {
     <SafeAreaView style={styles.container}>
       <Picker
         selectedValue={mood}
-        style={{height: 50, width: 100}}
+        style={styles.picker}
         onValueChange={(itemValue, itemIndex) =>
           setMood(itemValue)
         }>
@@ -118,5 +118,10 @@ const styles = StyleSheet.create({
   },
   captionsList: {
     paddingTop: 10
+  },
+  picker: {
+    height: 50,
+    margin: 10
+    // flex: 1
   }
 });
