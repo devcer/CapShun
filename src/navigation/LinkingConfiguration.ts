@@ -20,7 +20,7 @@ export default {
             screens: {
               TabThreeScreen: 'three',
             },
-          }
+          },
         },
       },
       NotFound: '*',

@@ -8,9 +8,7 @@ export default function TabThreeScreen() {
   const quotes = captions;
   return (
     <SafeAreaView style={styles.container}>
-     <Text>
-        Settings Screen
-      </Text>
+      <Text>Settings Screen</Text>
     </SafeAreaView>
   );
 }
