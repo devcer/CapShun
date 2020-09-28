@@ -11,7 +11,9 @@ import {
   BottomTabParamList,
   TabOneParamList,
   TabTwoParamList,
+  TabThreeParamList,
 } from '../../types';
+import TabThreeScreen from '../screens/TabThreeScreen';
 
 const BottomTab = createBottomTabNavigator<BottomTabParamList>();
 
@@ -20,11 +22,11 @@ export default function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="TabOne"
+      initialRouteName="Home"
       tabBarOptions={{ activeTintColor: Colors[colorScheme].tint }}
     >
       <BottomTab.Screen
-        name="TabOne"
+        name="Home"
         component={TabOneNavigator}
         options={{
           tabBarIcon: ({ color }) => (
@@ -33,8 +35,17 @@ export default function BottomTabNavigator() {
         }}
       />
       <BottomTab.Screen
-        name="Quotes"
+        name="Captions"
         component={TabTwoNavigator}
+        options={{
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="ios-code" color={color} />
+          ),
+        }}
+      />
+      <BottomTab.Screen
+        name="Settings"
+        component={TabThreeNavigator}
         options={{
           tabBarIcon: ({ color }) => (
             <TabBarIcon name="ios-code" color={color} />
@@ -78,5 +89,19 @@ function TabTwoNavigator() {
         options={{ headerTitle: 'Captions list' }}
       />
     </TabTwoStack.Navigator>
+  );
+}
+
+const TabThreeStack = createStackNavigator<TabThreeParamList>();
+
+function TabThreeNavigator() {
+  return (
+    <TabThreeStack.Navigator>
+      <TabThreeStack.Screen
+        name="TabThreeScreen"
+        component={TabThreeScreen}
+        options={{ headerTitle: 'Settings' }}
+      />
+    </TabThreeStack.Navigator>
   );
 }
