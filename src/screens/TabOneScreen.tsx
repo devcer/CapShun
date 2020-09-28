@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import { Button, FlatList, SafeAreaView, StyleSheet, View } from 'react-native';
+import { Button, FlatList, SafeAreaView, StyleSheet } from 'react-native';
 import MultiSelect from 'react-native-multiple-select';
 import Picker from '@react-native-community/picker/js/Picker'
 import { Moods } from '../constants/Text';
-import QuoteCard, { Quote } from '../components/QuoteCard';
+import QuoteCard from '../components/QuoteCard';
 import { captions } from '../constants/MockData';
 
-export default function TabOneScreen({navigation}) {
+export default function TabOneScreen() {
   const listItems = [{
     id: '92iijs7yta',
     name: 'Ondo',
@@ -54,7 +54,7 @@ export default function TabOneScreen({navigation}) {
       <Picker
         selectedValue={mood}
         style={styles.picker}
-        onValueChange={(itemValue, itemIndex) =>
+        onValueChange={(itemValue) =>
           setMood(itemValue)
         }>
         {moodItems}
@@ -98,6 +98,7 @@ export default function TabOneScreen({navigation}) {
   );
 
   function showCaptions() {
+    // {navigation}
     // navigation.jumpTo('Quotes');
     setHideCaptions(false);
   }

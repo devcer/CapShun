@@ -1,14 +1,11 @@
 import * as React from "react";
 import { StyleSheet, SafeAreaView, FlatList } from "react-native";
 
-import EditScreenInfo from "../components/EditScreenInfo";
-import { Text, View } from "../components/Themed";
-import QuoteCard, { Quote } from "../components/QuoteCard";
+import QuoteCard from "../components/QuoteCard";
 import { captions } from "../constants/MockData";
 
 export default function TabTwoScreen() {
   const quotes = captions;
-
   return (
     <SafeAreaView style={styles.container}>
       {/* {quoteItems} */}

@@ -1,9 +1,6 @@
-import * as WebBrowser from 'expo-web-browser';
-import React, { useState } from 'react';
-import { StyleSheet, TouchableOpacity, Button, Alert, Clipboard, ToastAndroid} from 'react-native';
+import React from 'react';
+import { StyleSheet, Clipboard, ToastAndroid} from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
-
-import Colors from '../constants/Colors';
 import { View, Text } from './Themed';
 
 export default function QuoteCard(props: {quote: Quote}) {
