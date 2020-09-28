@@ -1,8 +1,8 @@
-import * as React from "react";
-import { StyleSheet, SafeAreaView, FlatList } from "react-native";
+import * as React from 'react';
+import { StyleSheet, SafeAreaView, FlatList } from 'react-native';
 
-import QuoteCard from "../components/QuoteCard";
-import { captions } from "../constants/MockData";
+import QuoteCard from '../components/QuoteCard';
+import { captions } from '../constants/MockData';
 
 export default function TabTwoScreen() {
   const quotes = captions;
@@ -11,9 +11,7 @@ export default function TabTwoScreen() {
       {/* {quoteItems} */}
       <FlatList
         data={quotes}
-        renderItem={({item})=> (
-          <QuoteCard key={item.id} quote={item}/>
-        )}
+        renderItem={({ item }) => <QuoteCard key={item.id} quote={item} />}
       />
     </SafeAreaView>
   );
@@ -21,15 +19,15 @@ export default function TabTwoScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
   },
   title: {
     fontSize: 20,
-    fontWeight: "bold",
+    fontWeight: 'bold',
   },
   separator: {
     marginVertical: 30,
     height: 1,
-    width: "80%",
+    width: '80%',
   },
 });
