@@ -12,6 +12,11 @@
   "jest": {
     "preset": "jest-expo"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
   "dependencies": {
     "@expo/vector-icons": "^10.0.0",
     "@react-native-community/clipboard": "^1.2.3",
@@ -50,6 +55,7 @@
     "eslint-plugin-jest": "^24.0.2",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.2",
+    "husky": "^4.3.0",
     "jest-expo": "~38.0.0",
     "prettier": "^2.1.2",
     "typescript": "~3.9.5"
