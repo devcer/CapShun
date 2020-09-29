@@ -24,5 +24,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm install
-      - run: npm run lint
+      - uses: CultureHQ/actions-yarn@v1.0.1
+      - run: yarn install
+      - run: yarn lint
