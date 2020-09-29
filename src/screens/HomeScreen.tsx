@@ -6,7 +6,7 @@ import { Moods } from '../constants/Text';
 import QuoteCard from '../components/QuoteCard';
 import { captions } from '../constants/MockData';
 
-export default function TabOneScreen() {
+export default function HomeScreen() {
   const listItems = [
     {
       id: '92iijs7yta',

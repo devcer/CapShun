@@ -1,14 +1,18 @@
 import * as React from 'react';
-import { StyleSheet, SafeAreaView, FlatList, Text } from 'react-native';
+import { StyleSheet, SafeAreaView, FlatList } from 'react-native';
 
 import QuoteCard from '../components/QuoteCard';
 import { captions } from '../constants/MockData';
 
-export default function TabThreeScreen() {
+export default function CaptionsScreen() {
   const quotes = captions;
   return (
     <SafeAreaView style={styles.container}>
-      <Text>Settings Screen</Text>
+      {/* {quoteItems} */}
+      <FlatList
+        data={quotes}
+        renderItem={({ item }) => <QuoteCard key={item.id} quote={item} />}
+      />
     </SafeAreaView>
   );
 }
