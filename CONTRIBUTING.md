@@ -1,6 +1,6 @@
 # Contributing Guidelines:
 
-We welcome all contributions to the GATK project. The contribution can be a [issue report](https://github.com/devcer/CapShun/issues) 
+We welcome all contributions to the CapShun project. The contribution can be a [issue report](https://github.com/devcer/CapShun/issues) 
 or a [pull request](https://github.com/devcer/CapShun/pulls)..
 
 ## Contribution workflow:
