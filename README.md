@@ -16,7 +16,7 @@ The other dependencies can be installed by running `npm install` in the root dir
 In your terminal, 
 * Start the Expo CLI by running `expo start`.
 * Run `npm start`. Expo then creates a QR code that can be used to run the app on Android (Expo app or over ADB) or iOS (Expo App),if they're on the same WLAN network.
-  Alternatively, you can start it in a web browser using the URLs provided in the terminal, or an [Android emulator](https://docs.expo.io/workflow/android-studio-emulator/)on PC.
+Alternatively, you can start it in a web browser using the URLs provided in the terminal, or an [Android emulator](https://docs.expo.io/workflow/android-studio-emulator/) on PC.
 
 This launches the app in development mode, which allows on-the-fly code editing, but may not be as performant as a production build.
 
