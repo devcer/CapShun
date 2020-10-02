@@ -5,5 +5,6 @@
 
 ## Install and run
 
-Dependencies:
-Run `npm install` in the program directory to automatically install the required dependencies.
+### Dependencies
+* Node.js, version or above. Download it from https://nodejs.org/en/download/.
+* Expo CLI
