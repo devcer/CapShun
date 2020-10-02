@@ -8,11 +8,17 @@
 ### Dependencies
 * Node.js, version or above. Download it from https://nodejs.org/en/download/ .
 * Expo CLI. Install it using `npm install -g expo-cli` in your terminal.
-* sharp-cli
 The other dependencies can be installed by running `npm install` in the root directory of the repo.
 
-### Launching it in developer mode
+### Launching it in development mode
 In your terminal, 
 * Start the Expo CLI by running `expo start`.
-* Run `npm start`. Expo then creates a QR code that can be used to run the app on Android (Expo app or over USB) or iOS (Expo App), provided that they're on the same WLAN network.
-  Alternatively, you can start it in a web browser using the URLs provided in the terminal, or an [Android emulator](https://docs.expo.io/workflow/android-studio-emulator/).
+* Run `npm start`. Expo then creates a QR code that can be used to run the app on Android (Expo app or over ADB) or iOS (Expo App),if they're on the same WLAN network.
+  Alternatively, you can start it in a web browser using the URLs provided in the terminal, or an [Android emulator](https://docs.expo.io/workflow/android-studio-emulator/)on PC.
+
+This launches the app in development mode, which may not be as performant as a production build.
+
+### Creating a production build
+Production builds can be created for web, Android or iOS. This minifies the code and improves performance. Instructions for each platform can be found here:
+* [Web](https://docs.expo.io/distribution/publishing-websites/)
+* [Mobile](https://docs.expo.io/distribution/building-standalone-apps/)
