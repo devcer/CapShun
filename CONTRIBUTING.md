@@ -21,9 +21,7 @@ email, or any other method with the owners of this repository before making a ch
 
 ## Contact 📬️
 
-👨‍💻️ Your name - [@twitter_handle](https://twitter.com/twitter_handle)
-
-✉️ Email - <a href="mailto:yourname ">samplemail@gmail.com</a>
+👨‍💻️ Twiiter - [@isantoshv](https://twitter.com/isantoshv)
 
 🏗️ Project Link: [https://github.com/devcer/CapShun](https://github.com/devcer/CapShun)
 
