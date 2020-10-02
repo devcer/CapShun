@@ -8,7 +8,7 @@
 ### Dependencies
 * Node.js, version or above. Download it from https://nodejs.org/en/download/ .
 * Expo CLI. Install it using `npm install -g expo-cli` in your terminal.
- The other dependencies can be installed by running `npm install` in the root directory of the repo.
+  The other dependencies can be installed by running `npm install` in the root directory of the repo.
 
 ### Launching it in development mode
 In your terminal, 
