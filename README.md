@@ -6,5 +6,5 @@
 ## Install and run
 
 Dependencies:
-*Expo SDK
-*Node.js
+* Expo SDK
+* Node.js
