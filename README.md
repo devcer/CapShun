@@ -6,5 +6,4 @@
 ## Install and run
 
 Dependencies:
-* Expo SDK
-* Node.js
+Run `npm install` in the program directory to automatically install the required dependencies.
