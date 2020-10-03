@@ -13,8 +13,10 @@ export default function QuoteCard(props: { quote: Quote }) {
         name="copy"
         backgroundColor="#000"
         onPress={copyToClipboard}
+        style={styles.icon}
       >
-        Copy
+        {/* Copy */}{' '}
+        {/* COMMENTED OUT BY GITHUB USER: https://github.com/hambali999, as described by owner ' No need of text Copy.' */}
       </FontAwesome.Button>
     </View>
   );
@@ -43,6 +45,10 @@ const styles = StyleSheet.create({
     padding: 5,
   },
   copyButton: {},
+  icon: {
+    alignSelf: 'flex-end',
+    // BY GITHUB USER: https:github.com/hambali999, as described by owner to ' Copy icon should be on the bottom right of the card. '
+  },
 });
 
 export const showToast = (message: string) => {
