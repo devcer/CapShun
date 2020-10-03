@@ -20,31 +20,39 @@ or a [pull request](https://github.com/devcer/CapShun/pulls).
  ```
 4. Sync the fork, to avoid merge conflicts. 
 
-  ```bash
+```bash
+
     git remote add upstream https://github.com/devcer/CapShun.git
     git fetch upstream
     git pull upstream master
     git push
-    ```
+    
+```
 
 5. Create a new branch with your github username as its name.
 
  ```bash
+ 
     git checkout -b <your-github-username>
-  ```
+    
+ ```
 
-6. Make the necessary changes / additions within your forked repository
+6. Make the necessary changes / additions within your forked repository.
 
 7. Add and commit changes made.
 
  ```bash
+ 
     git add .
     git commit -m "commit message"
+    
  ```
 8. Push the changes to forked repository.
 
  ```bash
+ 
     git push origin <branch-name>
+    
  ```
 
 9. Submit a Pull Request against the `master` branch and wait for the code to be reviewed and merged.
