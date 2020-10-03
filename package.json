@@ -12,6 +12,11 @@
   "jest": {
     "preset": "jest-expo"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint"
+    }
+  },
   
   "dependencies": {
     "@expo/vector-icons": "^10.0.0",
