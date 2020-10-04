@@ -1,5 +1,4 @@
-### Install and run
-, 
+## Install and run
 ### Dependencies
 * Node.js, version or above. Download and install it from https://nodejs.org/en/download/ .
 * Expo CLI. Install it using `npm install -g expo-cli` in your terminal.
