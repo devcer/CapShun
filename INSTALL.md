@@ -10,7 +10,7 @@ You can do this in any of four ways:
 
 ### Installing prerequisites
 * Install Node.js:
-  * For Windows and macOS, get the installer from https://nodejs.org/en/download/.
+  * For Windows and macOS, download and run the installer from https://nodejs.org/en/download/.
   * For Linux:
     * [Through your distro's package manager](https://nodejs.org/en/download/package-manager/)
     * [Through the binary archive](https://github.com/nodejs/help/wiki/Installation)
