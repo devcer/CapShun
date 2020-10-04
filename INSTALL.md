@@ -12,7 +12,7 @@ You can do this in any of four ways:
 * Install Node.js:
   * For Windows and macOS, get the installer from https://nodejs.org/en/download/.
   * For Linux:
-    * [Through yor distro's package manager](https://nodejs.org/en/download/package-manager/)
+    * [Through your distro's package manager](https://nodejs.org/en/download/package-manager/)
     * [Through the binary archive](https://github.com/nodejs/help/wiki/Installation)
     * [Through the Snap store](https://snapcraft.io/node)
 
@@ -29,11 +29,11 @@ In the root folder of the repo, run `expo start`. This provides a number of ways
 * Terminal options, which can be used by simply entering the respective letter into the terminal:
   * `w`: Runs it in your default web browser.
   * `a`: To run it on an [Android Emulator](https://docs.expo.io/workflow/android-studio-emulator/).
-  * `e`: Sends a link to an e-mail address of your choice which can be used to run the app. An Expo account must be created for this, which can be done directly from the terminal after entering the recipient. This is cur
+  * `e`: Sends a link to an e-mail address of your choice which can be used to run the app. An Expo account must be created for this, which can be done directly from the terminal after entering the recipient.
 
 This launches the app in development mode, which allows on-the-fly code editing, but may not be as performant as a production build.
 
 ### Creating a production build
-Production builds can be created for web, Android or iOS. This minifies the code and improves performance. Although too complex to cover here, instructions for each platform can be found here:
+Production builds can be created for web, Android or iOS. This minifies the code and improves performance. Although outside the scope of this guide, instructions for each platform can be found here:
 * [Web](https://docs.expo.io/distribution/publishing-websites/)
 * [Mobile](https://docs.expo.io/distribution/building-standalone-apps/)
