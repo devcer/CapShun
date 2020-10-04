@@ -1,11 +1,16 @@
 ### Install and run
 
 ### Dependencies
-* Node.js, version or above. Download it from https://nodejs.org/en/download/ .
+* Node.js, version or above. Download and install it from https://nodejs.org/en/download/ .
 * Expo CLI. Install it using `npm install -g expo-cli` in your terminal.
 * Optionally, `sharp-cli`. Install it using `npm install -g sharp-cli`.
 
 The other dependencies can be installed by running `npm install` in the root directory of the app.
+
+### Getting the source code
+You can do this in any of four ways:
+* On the app's homepage, click Code then Download as ZIP. After downloading, extract it into the folder of your choice.
+* 
 
 ### Launching it in development mode
 In the root directory of the app, 
