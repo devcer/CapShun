@@ -15,9 +15,12 @@ After installing Node.js,
 * Install the other dependencies by running `npm install` in the root folder of the repo.
 
 ### Launching it in development mode
-In the root folder of the repo, 
-* Run `expo start`. Expo then creates a QR code that can be scanned to run the app on Android or iOS device, if they're on the same WLAN network.  
-Alternatively, you can start it in a web browser using the URLs provided in the terminal, or an [Android emulator](https://docs.expo.io/workflow/android-studio-emulator/) on PC.\
+In the root folder of the repo, run `expo start`. This provides a number of ways to launch the app:
+* QR code: Expo will generate a QR code you can use to run the app on an Android device, if it's on the same WLAN network as your PC.
+* Terminal options:
+  * `w`: Runs it in your default web browser.
+  * `a`: To run it on an [Android Emulator](https://docs.expo.io/workflow/android-studio-emulator/).
+  * `e`: Sends a link to an e-mail address of your choice which can be used to run the app. An Expo account must be created for this, which can be done directly from the terminal after entering the recipient.
 This launches the app in development mode, which allows on-the-fly code editing, but may not be as performant as a production build.
 
 ### Creating a production build
