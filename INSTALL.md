@@ -13,7 +13,7 @@ You can do this in any of four ways:
   * For Windows and macOS, download and run the installer from https://nodejs.org/en/download/.
   * For Linux:
     * [Through your distro's package manager](https://nodejs.org/en/download/package-manager/)
-    * [Through the binary archive](https://github.com/nodejs/help/wiki/Installation)
+    * [Through the binary archive](https://github.com/nodejs/help/wiki/Installation) from https://nodejs.org/en/download/
     * [Through the Snap store](https://snapcraft.io/node)
 
 After installing Node.js,
