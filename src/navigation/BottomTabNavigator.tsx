@@ -32,7 +32,7 @@ export default function BottomTabNavigator() {
         component={TabOneNavigator}
         options={{
           tabBarIcon: ({ color }) => (
-            <TabBarIcon name="ios-code" color={color} />
+            <TabBarIcon name="md-home" color={color} />
           ),
         }}
       />
@@ -41,7 +41,7 @@ export default function BottomTabNavigator() {
         component={TabTwoNavigator}
         options={{
           tabBarIcon: ({ color }) => (
-            <TabBarIcon name="ios-code" color={color} />
+            <TabBarIcon name="md-list" color={color} />
           ),
         }}
       />
@@ -50,7 +50,7 @@ export default function BottomTabNavigator() {
         component={TabThreeNavigator}
         options={{
           tabBarIcon: ({ color }) => (
-            <TabBarIcon name="ios-code" color={color} />
+            <TabBarIcon name="md-settings" color={color} />
           ),
         }}
       />
