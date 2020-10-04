@@ -1,5 +1,5 @@
 # Install and run
-### Dependencies
+These are instructions on how to get CapShun up and running on your device. Basic knowledge of your Operating System's terminal and package manager (for Linux) is recommended.
 
 ### Cloning the repository
 You can do this in any of four ways:
@@ -14,7 +14,7 @@ You can do this in any of four ways:
   * For Linux:
     * [Through yor distro's package manager](https://nodejs.org/en/download/package-manager/)
     * [Through the binary archive](https://github.com/nodejs/help/wiki/Installation)
-    * [Through the Snap store](https://snapcraft.io/node)\
+    * [Through the Snap store](https://snapcraft.io/node)
 
 After installing Node.js,
 * Install the Expo CLI by running `npm install -g expo-cli` in your terminal.
@@ -29,7 +29,7 @@ In the root folder of the repo, run `expo start`. This provides a number of ways
 * Terminal options, which can be used by simply entering the respective letter into the terminal:
   * `w`: Runs it in your default web browser.
   * `a`: To run it on an [Android Emulator](https://docs.expo.io/workflow/android-studio-emulator/).
-  * `e`: Sends a link to an e-mail address of your choice which can be used to run the app. An Expo account must be created for this, which can be done directly from the terminal after entering the recipient.\
+  * `e`: Sends a link to an e-mail address of your choice which can be used to run the app. An Expo account must be created for this, which can be done directly from the terminal after entering the recipient. This is cur
 
 This launches the app in development mode, which allows on-the-fly code editing, but may not be as performant as a production build.
 
