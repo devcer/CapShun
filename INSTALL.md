@@ -30,6 +30,7 @@ In the root folder of the repo, run `expo start`. This provides a number of ways
   * `w`: Runs it in your default web browser.
   * `a`: To run it on an [Android Emulator](https://docs.expo.io/workflow/android-studio-emulator/).
   * `e`: Sends a link to an e-mail address of your choice which can be used to run the app. An Expo account must be created for this, which can be done directly from the terminal after entering the recipient.\
+
 This launches the app in development mode, which allows on-the-fly code editing, but may not be as performant as a production build.
 
 ### Creating a production build
