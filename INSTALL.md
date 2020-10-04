@@ -15,6 +15,7 @@ You can do this in any of four ways:
     * [Through yor distro's package manager](https://nodejs.org/en/download/package-manager/)
     * [Through the binary archive](https://github.com/nodejs/help/wiki/Installation)
     * [Through the Snap store](https://snapcraft.io/node)\
+
 After installing Node.js,
 * Install the Expo CLI by running `npm install -g expo-cli` in your terminal.
 * Install the other dependencies by running `npm install` in the root folder of the repo.
