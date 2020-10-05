@@ -4,6 +4,7 @@ import MultiSelect from 'react-native-multiple-select';
 import Picker from '@react-native-community/picker/js/Picker';
 import { Moods } from '../constants/Text';
 import QuoteCard from '../components/QuoteCard';
+import SelectedItem from '../components/SelectedItem';
 import { captions } from '../constants/MockData';
 
 export default function HomeScreen() {
@@ -55,6 +56,7 @@ export default function HomeScreen() {
 
   const onSelectedItemsChange = (selectedItems) => {
     setItems(selectedItems);
+    
   };
 
   const quotes = captions;
@@ -87,6 +89,10 @@ export default function HomeScreen() {
         searchInputStyle={{ color: '#CCC' }}
         submitButtonColor="#20C339"
         submitButtonText="Submit"
+      />
+      <FlatList
+        data={listItems.filter(item => items.includes(item.id))}
+        renderItem={({ item }) => <SelectedItem key={item.id} selected={item.name} />}
       />
       <Button title="Show Captions" onPress={showCaptions} />
       {!hideCaptions && (
