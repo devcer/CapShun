@@ -5,13 +5,16 @@ import { Text } from './Themed';
 
 export default function SelectedItem(props: { selected: string}) {
     return (
-      <TouchableOpacity  style={styles.container}>
+      <TouchableOpacity  style={styles.container} onClick={makeSomethingHappen}>
         <Text>{props.selected} <FontAwesome name="times"/></Text>
       </TouchableOpacity >
       
     );
   }
-
+  function makeSomethingHappen() {
+    console.log("hiu");
+    
+  }
   const styles = StyleSheet.create({
     container: {
       padding:5,
