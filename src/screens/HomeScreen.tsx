@@ -5,6 +5,7 @@ import Picker from '@react-native-community/picker/js/Picker';
 import { Moods } from '../constants/Text';
 import QuoteCard from '../components/QuoteCard';
 import SelectedItem from '../components/SelectedItem';
+import SelectedList from '../components/SelectedList';
 import { captions } from '../constants/MockData';
 
 export default function HomeScreen() {
@@ -56,7 +57,6 @@ export default function HomeScreen() {
 
   const onSelectedItemsChange = (selectedItems) => {
     setItems(selectedItems);
-    
   };
 
   const quotes = captions;
@@ -90,10 +90,12 @@ export default function HomeScreen() {
         submitButtonColor="#20C339"
         submitButtonText="Submit"
       />
-      <FlatList
+      <SelectedList selected={listItems.filter(item => items.includes(item.id))}></SelectedList>
+      {/* <FlatList
+        style={styles.selected}
         data={listItems.filter(item => items.includes(item.id))}
         renderItem={({ item }) => <SelectedItem key={item.id} selected={item.name} />}
-      />
+      /> */}
       <Button title="Show Captions" onPress={showCaptions} />
       {!hideCaptions && (
         <FlatList
@@ -133,4 +135,9 @@ const styles = StyleSheet.create({
     margin: 10,
     // flex: 1
   },
+  selected: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    padding: 20
+  }
 });

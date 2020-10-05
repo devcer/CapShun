@@ -1,24 +1,22 @@
 import React from 'react';
-import { StyleSheet} from 'react-native';
+import { TouchableOpacity, StyleSheet} from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
-import { View, Text } from './Themed';
+import { Text } from './Themed';
 
-export default function SelectedItem(props: { selected: string }) {
+export default function SelectedItem(props: { selected: string}) {
     return (
-      <View style={styles.container}>
-        <Text style={styles.selectedText}>{props.selected}</Text>
-      </View>
+      <TouchableOpacity  style={styles.container}>
+        <Text>{props.selected} <FontAwesome name="times"/></Text>
+      </TouchableOpacity >
+      
     );
   }
 
   const styles = StyleSheet.create({
     container: {
-      borderColor: '#cccccc',
-      borderWidth: 2,
+      padding:5,
+      margin:5,
+      borderRadius: 20,
+      borderWidth: 2
     },
-    selectedText: {
-      fontSize: 16,
-      padding: 5,
-    },
-    copyButton: {},
   });
