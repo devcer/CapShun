@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<QuoteCard /> renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "backgroundColor": "#fff",
+      },
+      Object {
+        "borderColor": "#cccccc",
+        "borderWidth": 2,
+      },
+    ]
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#000",
+        },
+        Object {
+          "fontSize": 16,
+          "padding": 5,
+        },
+      ]
+    }
+  >
+    Mood: 
+    Happy
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#000",
+        },
+        Object {
+          "fontSize": 12,
+          "padding": 5,
+        },
+      ]
+    }
+  >
+    Tags: 
+    sunset, beach
+  </Text>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "#000",
+        },
+        Object {
+          "fontSize": 20,
+          "padding": 5,
+        },
+      ]
+    }
+  >
+    Beach please!
+  </Text>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "overflow": "hidden",
+        },
+        Object {
+          "backgroundColor": "#000",
+          "borderRadius": 5,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "flex-start",
+            "padding": 8,
+          },
+          Object {
+            "backgroundColor": "#000",
+            "borderRadius": 5,
+          },
+          undefined,
+        ]
+      }
+    >
+      <Text />
+      <Text
+        style={
+          Array [
+            Object {
+              "backgroundColor": "transparent",
+              "fontWeight": "600",
+            },
+            Object {
+              "color": "white",
+            },
+          ]
+        }
+      >
+        Copy
+      </Text>
+    </View>
+  </View>
+</View>
+`;
