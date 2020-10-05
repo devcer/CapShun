@@ -25,5 +25,15 @@ jobs:
         with:
           node-version: 12
       - uses: CultureHQ/actions-yarn@v1.0.1
-      - run: yarn install
-      - run: yarn lint
+
+      # Install Packages
+      - name: Install
+        run: yarn install
+
+      # Run Linter
+      - name: Lint
+        run: yarn lint
+
+      # Run unittests
+      - name: Test
+        run: yarn test
