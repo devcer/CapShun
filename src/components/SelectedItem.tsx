@@ -3,17 +3,13 @@ import { TouchableOpacity, StyleSheet} from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import { Text } from './Themed';
 
-export default function SelectedItem(props: { selected: string}) {
+export default function SelectedItem(props: { selected: any, key: string, onClick: Function}) {
     return (
-      <TouchableOpacity  style={styles.container} onClick={makeSomethingHappen}>
-        <Text>{props.selected} <FontAwesome name="times"/></Text>
+      <TouchableOpacity  style={styles.container} onClick={() => props.onClick(props.selected)}>
+        <Text>{props.selected.name} <FontAwesome name="times"/></Text>
       </TouchableOpacity >
       
     );
-  }
-  function makeSomethingHappen() {
-    console.log("hiu");
-    
   }
   const styles = StyleSheet.create({
     container: {
