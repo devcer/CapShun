@@ -89,9 +89,9 @@ export default function HomeScreen() {
         submitButtonColor="#20C339"
         submitButtonText="Submit"
       />
-      <SelectedList 
-        selected={listItems.filter(item => items.includes(item.id))}
-        onSelectedItemsChange={onSelectedItemsChange} 
+      <SelectedList
+        selected={listItems.filter((item) => items.includes(item.id))}
+        onSelectedItemsChange={onSelectedItemsChange}
       />
       <Button title="Show Captions" onPress={showCaptions} />
       {!hideCaptions && (
@@ -135,6 +135,6 @@ const styles = StyleSheet.create({
   selected: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    padding: 20
-  }
+    padding: 20,
+  },
 });
