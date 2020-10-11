@@ -1,3 +1,11 @@
+[![GitHub license](https://img.shields.io/github/license/devcer/CapShun)](https://github.com/devcer/CapShun/blob/master/LICENSE)
+
+[![GitHub issues](https://img.shields.io/github/issues/devcer/CapShun)](https://github.com/devcer/CapShun/issues)
+
+[![GitHub forks](https://img.shields.io/github/forks/devcer/CapShun)](https://github.com/devcer/CapShun/network)
+
+[![GitHub stars](https://img.shields.io/github/stars/devcer/CapShun)](https://github.com/devcer/CapShun/stargazers)
+
 # CapShun
 
 
