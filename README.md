@@ -1,4 +1,4 @@
-[![GitHub license](https://img.shields.io/github/license/devcer/CapShun)]https://github.com/devcer/CapShun/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/devcer/CapShun)](https://github.com/devcer/CapShun/blob/master/LICENSE)
 
 [![GitHub issues](https://img.shields.io/github/issues/devcer/CapShun)](https://github.com/devcer/CapShun/issues)
 
