@@ -3,6 +3,11 @@
 We welcome all contributions to the CapShun project. The contribution can be a [issue report](https://github.com/devcer/CapShun/issues) 
 or a [pull request](https://github.com/devcer/CapShun/pulls).
 
+Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+When contributing to this repository, please first discuss the change you wish to make via issue, 
+email, or any other method with the owners of this repository before making a change.
+
 ## Contribution workflow:
 
 
@@ -58,4 +63,18 @@ or a [pull request](https://github.com/devcer/CapShun/pulls).
 9. Submit a Pull Request against the `master` branch and wait for the code to be reviewed and merged.
 
 If you're not used to this workflow with git, you can start with some [basic docs from GitHub](https://help.github.com/articles/fork-a-repo/).
+
+**Always remember when you are stuck at somewhere, you can always reach out we are ready to help**
+
+## Contact 📬️
+
+👨‍💻️ Twiiter - [@isantoshv](https://twitter.com/isantoshv)
+
+🏗️ Project Link: [https://github.com/devcer/CapShun](https://github.com/devcer/CapShun)
+
+
+
+[issues-shield]: https://img.shields.io/github/issues/devcer/repo.svg?style=flat-square
+[issues-url]: https://github.com/devcer/repo/issues
+
 
